@@ -1,5 +1,6 @@
 import React from 'react';
 import Icons from './icons'
+import ParagraphHover from './paragraphHover';
 import Logo from './images/logo.png'
 
 function App() {
@@ -11,18 +12,7 @@ function App() {
                   justify-center items-center font-extrabold 
                   text-xl"
     >
-      <div className="flex-1 container mx-16">
-        <p
-          className="font-extrabold text-8xl sm:text-9xl"
-        >
-          ANGEL
-        </p>
-        <p
-          className="text-themeBlue font-extrabold text-8xl sm:text-9xl text-right"
-        >
-          RAMIREZ
-        </p>
-      </div>
+      <ParagraphHover/>
       <div className="flex-1">
         <img className="hidden sm:block" src={Logo} />
       </div>
