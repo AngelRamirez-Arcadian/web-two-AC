@@ -1,4 +1,5 @@
 import React from 'react';
+import Icons from './icons'
 import Logo from './images/logo.png'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <img className="hidden sm:block" src={Logo} />
       </div>
     </div>
+    <Icons/>
   </main>
   );
 }
