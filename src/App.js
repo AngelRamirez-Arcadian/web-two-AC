@@ -5,7 +5,7 @@ import Logo from './images/logo.png'
 
 function App() {
   return (
-    <main className="w-full flex inset-0 font-sans text-gray-900 bg-themeDarkBlue">
+    <main className="w-full flex inset-0 font-sans text-white-900 bg-themeDarkBlue">
     <div
       className="w-full inset-0 
                   h-screen text-white flex 
@@ -13,8 +13,8 @@ function App() {
                   text-xl"
     >
       <ParagraphHover/>
-      <div className="flex-1">
-        <img className="hidden sm:block" src={Logo} />
+      <div className="w-1/2 hidden sm:block">
+        <img className="" src={Logo} />
       </div>
     </div>
     <Icons/>

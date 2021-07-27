@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Icons from './icons'
 import App from './App';
+import AcercaDeMi from './acercade';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Icons/>
     <App />
+    <AcercaDeMi/>
   </React.StrictMode>,
   document.getElementById('root')
 );

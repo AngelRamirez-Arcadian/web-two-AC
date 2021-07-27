@@ -27,11 +27,11 @@ const ParagraphTwo = styled.p`
 `
 
 const ParagraphHover = () => (
-    <div className="flex-1 container mx-16">
-        <ParagraphOne className="font-extrabold text-8xl sm:text-9xl">
+    <div className="sm:w-1/2 w-full">
+        <ParagraphOne className="font-extrabold text-7xl md:text-9xl text-center sm:text-left md:mx-10">
             ANGEL
         </ParagraphOne>
-        <ParagraphTwo className="text-themeBlue font-extrabold text-8xl sm:text-9xl text-right">
+        <ParagraphTwo className="text-themeBlue font-extrabold text-7xl md:text-9xl text-center sm:text-right">
             RAMIREZ
         </ParagraphTwo>
     </div>
