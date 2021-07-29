@@ -2,11 +2,11 @@ import React from 'react';
 import Logo from './images/logo.png'
 
 const AcercaDeMi = () =>(
-        <div className="w-full inset-0 h-screen text-white flex
+        <div className="w-full inset-0 min-h-full text-white flex: ;
                         text-xl text-white-900 bg-themeDarkBlue
                         font-light">
-            <div className="sm:mx-44 mx-7 sm:flex flex-col">
-                <div className="sm:w-1/2 w-full">
+            <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">
+                <div className="md:w-1/2 w-full flex-1">
                     <div className="text-justify sm:text-left mb-10">
                         <p className="text-themeBlue font-bold text-2xl mb-1">ACERCA DE MI</p>
                         <p className="mb-2">
@@ -48,8 +48,8 @@ const AcercaDeMi = () =>(
                         </ul>
                     </div>
                 </div>
-                <div className="sm:w-1/2 w-full">
-                    <img className="" src={Logo} />
+                <div className="flex-1 md:w-1/2 w-full flex justify-center items-center">
+                    <img className="h-40 w-40 bg-white" src={Logo} />
                 </div>
             </div>
 

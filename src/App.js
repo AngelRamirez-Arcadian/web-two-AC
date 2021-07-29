@@ -13,7 +13,7 @@ function App() {
                   text-xl"
     >
       <ParagraphHover/>
-      <div className="w-1/2 hidden sm:block">
+      <div className="w-1/2 hidden desktop:block">
         <img className="" src={Logo} />
       </div>
     </div>
