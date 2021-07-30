@@ -1,4 +1,5 @@
 import React from 'react';
+import RotatingText from './rotatingText';
 import Icons from './icons'
 import ParagraphHover from './paragraphHover';
 import Logo from './images/logo.png'
@@ -13,6 +14,7 @@ function App() {
                   text-xl"
     >
       <ParagraphHover/>
+      <RotatingText/>
       <div className="w-1/2 hidden desktop:block">
         <img className="" src={Logo} />
       </div>
