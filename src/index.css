@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-rotating-text-cursor {
+    animation: blinking-cursor 0.7s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+    color: white;
+  }
+  
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
