@@ -1,4 +1,5 @@
 import React from 'react';
+import RotatingText from './rotatingText';
 import styled from 'styled-components'
 
 const ParagraphOne = styled.p`
@@ -27,13 +28,14 @@ const ParagraphTwo = styled.p`
 `
 
 const ParagraphHover = () => (
-    <div className="sm:w-1/2 w-full">
+    <div className="sm:w-1/2 w-full flex-1">
         <ParagraphOne className="font-extrabold text-7xl desktop:text-9xl text-center desktop:text-left md:mx-10">
             ANGEL
         </ParagraphOne>
         <ParagraphTwo className="text-themeBlue font-extrabold text-7xl desktop:text-9xl text-center desktop:text-right">
             RAMIREZ
         </ParagraphTwo>
+        <RotatingText/>
     </div>
 )
  
