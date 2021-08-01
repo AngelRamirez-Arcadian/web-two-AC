@@ -37,14 +37,14 @@ const AcercaDeMi = () =>(
                             de software, optimizacion de procesos y desarrollo a la medida.
                         </p>
                         <ul>
-                            <li><font className="text-themeBlue">• </font>Desarrollo  Web</li>
-                            <li><font className="text-themeBlue">• </font>Desarro Movil</li>
-                            <li><font className="text-themeBlue">• </font>Aplicaciones de Escritorio</li>
-                            <li><font className="text-themeBlue">• </font>Administracion de Bases de Datos</li>
-                            <li><font className="text-themeBlue">• </font>Intermediario Online</li>
-                            <li><font className="text-themeBlue">• </font>Analisis de Datos</li>
-                            <li><font className="text-themeBlue">• </font>Analisis de Negocio</li>
-                            <li><font className="text-themeBlue">• </font>Analisis de Requerimientos</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Desarrollo  Web</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Desarro Movil</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Aplicaciones de Escritorio</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Administracion de Bases de Datos</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Intermediario Online</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Analisis de Datos</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Analisis de Negocio</li>
+                            <li><font className="text-themeBlue">&#8226; </font>Analisis de Requerimientos</li>
 
                         </ul>
                     </div>

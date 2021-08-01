@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inconsolata: ['Inconsolata', 'monospace'],
+        IBM: ['IBM Plex Mono', 'monospace'],
       },
       screens: {
         desktop: '75rem', //1000px
