@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from './images/logo.png'
+import Acerca from './images/imgcoding.svg'
+
 
 const AcercaDeMi = () =>(
         <div className="w-full min-h-full text-white flex
@@ -47,8 +49,10 @@ const AcercaDeMi = () =>(
                         </ul>
                     </div>
                 </div>
-                <div className="flex-1 md:w-1/2 w-full flex justify-center items-center mt-5 desktop:mt-0">
-                    <img className="h-40 w-40 bg-white" src={Logo} />
+                <div className="flex-1 md:w-1/2 w-full flex justify-center items-center mt-2 sm:mt-0">
+                    <div className="flex justify-center desktop:justify-end mt-10 desktop:mt-0">
+                        <img src={Acerca} className="desktop:w-10/12 w-3/4" />
+                    </div>
                 </div>
             </div>
 
