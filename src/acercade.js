@@ -2,9 +2,9 @@ import React from 'react';
 import Logo from './images/logo.png'
 
 const AcercaDeMi = () =>(
-        <div className="w-full min-h-full text-white flex: ;
+        <div className="w-full min-h-full text-white flex
                         text-xl text-white-900 bg-themeDarkBlue
-                        font-light pb-28">
+                        font-sans font-light pb-28">
             <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">
                 <div className="md:w-1/2 w-full flex-1">
                     <div className="text-justify sm:text-left mb-10">

@@ -5,10 +5,10 @@ var ReactRotatingText = require('react-rotating-text');
 const RotatingText = () => (
 <div className="flex justify-center">
     <ReactRotatingText 
-        className='font-mono text-xl desktop:text-4xl mt-5'
+        className='font-inconsolata text-xl desktop:text-4xl mt-5'
         items={[`< SOFTWARE DEVELOPER />`,
                 `< DESIGNER />`,
-                `< CRYPTO INVESTOR />`,
+                `< CRYPTOCURRENCY INVESTOR />`,
                 `< OLD GAMER />`]}
         color='#6196E4' 
     />

@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        inconsolata: ['Inconsolata', 'monospace'],
+      },
       screens: {
         desktop: '75rem', //1000px
       },
