@@ -1,5 +1,6 @@
 import React from 'react';
 import Yo from './images/imgrelax.svg'
+import LinkHover from './linkHover';
 
 const AcercaTwo = () => (
     <div className="bg-themeDarkBlue text-white w-full min-h-full text-xl font-sans font-extralight pb-32">
@@ -13,12 +14,10 @@ const AcercaTwo = () => (
                 <p className="text-themeBlue font-bold text-2xl mb-1">MAS SOBRE MI</p>
                 <p className="mt-2">
                     Tengo 22 años, soy alumno de la&nbsp;
-                    <a
-                        className="text-themeBlue hover:text-white"
-                        href="https://www.uaeh.edu.mx/"
-                    >
-                        Universidad Autonoma del Estado de Hidalgo
-                    </a>
+                    <LinkHover
+                        text={'UAEH'}
+                        url={'https://www.uaeh.edu.mx/'}
+                    />
                     , aprecio el diseño y el desarrollo web, me gusta mucho aprender nuevas tecnologias,
                     debatir sobre proyectos nuevos de las mejores empresas.     
                 </p>

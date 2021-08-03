@@ -1,4 +1,5 @@
 import React from 'react';
+import LinkHover from './linkHover';
 import Logo from './images/logo.png'
 import Acerca from './images/imgcoding.svg'
 import Yo from './images/imgrelax.svg'
@@ -14,17 +15,19 @@ const AcercaDeMi = () =>(
                         <p className="text-themeBlue font-bold text-2xl mb-1">ACERCA DE MI</p>
                         <p className="mb-2">
                             Desarrollador de Software, CEO en&nbsp;
-                            <a href="https://www.facebook.com/ArcadianCorp" className="text-themeBlue inline-block">
-                                Arcadian Corp.
-                            </a>
+                            <LinkHover 
+                                url={'https://www.facebook.com/ArcadianCorp'}
+                                text={'Arcadian Corp.'}
+                            />
                         </p>
                         <p>
                             Soy un desarrollador creativo de nacionalidad Mexicana, 
                             arriesgándose a cualquier reto, aprendiendo e iniciando 
                             una empresa llamada&nbsp;
-                            <a href="https://www.facebook.com/ArcadianCorp" className="text-themeBlue inline-block">
-                                Arcadian Corp.
-                            </a>
+                            <LinkHover 
+                                url={'https://www.facebook.com/ArcadianCorp'}
+                                text={'Arcadian Corp.'}
+                            />
                         </p>
                     </div>
                     <div className="text-justify sm:text-left">
