@@ -1,12 +1,13 @@
 import React from 'react';
 import Logo from './images/logo.png'
 import Acerca from './images/imgcoding.svg'
+import Yo from './images/imgrelax.svg'
 
 
 const AcercaDeMi = () =>(
         <div className="w-full min-h-full text-white flex
-                        text-xl text-white-900 bg-themeDarkBlue
-                        font-sans font-light pb-28">
+                        text-xl bg-themeDarkBlue
+                        font-sans font-extralight pb-28">
             <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">
                 <div className="md:w-1/2 w-full flex-1">
                     <div className="text-justify sm:text-left mb-10">
@@ -21,10 +22,9 @@ const AcercaDeMi = () =>(
                             Soy un desarrollador creativo de nacionalidad Mexicana, 
                             arriesgándose a cualquier reto, aprendiendo e iniciando 
                             una empresa llamada&nbsp;
-                            <a href="https://www.facebook.com/ArcadianCorp" className="text-themeBlue">
+                            <a href="https://www.facebook.com/ArcadianCorp" className="text-themeBlue inline-block">
                                 Arcadian Corp.
-                            </a> 
-                            &nbsp;<font className="text-xs">"Navegando hacia el futuro"</font>
+                            </a>
                         </p>
                     </div>
                     <div className="text-justify sm:text-left">
@@ -55,7 +55,6 @@ const AcercaDeMi = () =>(
                     </div>
                 </div>
             </div>
-
         </div>
 ) 
 export default AcercaDeMi;
