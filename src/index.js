@@ -5,6 +5,7 @@ import Icons from './icons'
 import App from './App';
 import AcercaDeMi from './acercade';
 import AcercaTwo from './acercadetwo';
+import Prueba from './testprogress';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
     <App />
     <AcercaDeMi/>
     <AcercaTwo/>
+    <Prueba/>
   </React.StrictMode>,
   document.getElementById('root')
 );
