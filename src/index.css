@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
 
+::-webkit-scrollbar {
+  display: none;
+}
 .react-rotating-text-cursor {
     animation: blinking-cursor 0.7s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
     color: white;
