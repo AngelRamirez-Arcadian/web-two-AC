@@ -15,6 +15,7 @@ function App() {
         <img className="h-56 w-56 container mx-auto" src={Logo} />
       </div>
     </div>
+    {/* mailto:hi@danrocha.xyz?subject=Email%20Subject&body=Body%20Text */}
   </main>
   );
 }
