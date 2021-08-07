@@ -10,7 +10,7 @@ const CircleBar = ({percent, task, classNames}) => (
                 {percent}
             </div>
         </div>
-        <h1 className="text-themeBlue font-IBM font-semibold tracking-wider text-center">
+        <h1 className="text-white font-light tracking-wider text-center">
             {task}
         </h1>
     </div>
