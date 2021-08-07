@@ -57,7 +57,7 @@ const images = {
     height: 42px;
     ${HoverImage},
     ${ActiveImage} {
-      opacity: 0.10;
+      opacity: 0.2;
     }
     ${DefaultImage} {
       opacity: 1;

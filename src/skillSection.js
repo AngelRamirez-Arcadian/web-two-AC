@@ -3,10 +3,10 @@ import CircleBar from './circleBar';
 import BarComponent from './barcomponent';
 
 const SkillSection = () =>
-<section className="bg-themeDarkBlue pb-40">
+<section className=" pb-40">
     <div className="sm:flex sm:flex-row flex-col">
         <div className="sm:w-1/2 w-w-full">
-            <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center">Habilidades</h1>
+            <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center sm:mb-20 mb-10">Habilidades</h1>
             <div className=" grid grid-cols-2">
                 <CircleBar 
                     classNames={'progress--90'}
@@ -30,10 +30,10 @@ const SkillSection = () =>
                 />
             </div>
         </div>
-        <div className="sm:w-1/2 w-full sm:mb-0">
-            <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center mb-5 mt-10 desktop:mt-0  text-center">Habilidades No Tecnicas</h1>
+        <div className="sm:w-1/2 w-full sm:mb-0 mt-20 sm:mt-0 ">
+            <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center desktop:mt-0 text-center sm:mb-44 mb-10">Habilidades No Tecnicas</h1>
             <div className="flex justify-center">
-                <ul className="text-white font-IBM font-semibold text-md leading-loose tracking-wide">
+                <ul className="text-white font-light text-md leading-loose tracking-wide">
                     <li><font className="text-themeBlue">&#8226; </font>Analisis de Requerimientos</li>
                     <li><font className="text-themeBlue">&#8226; </font>Analisis de Negocio</li>
                     <li><font className="text-themeBlue">&#8226; </font>Analisis de Mercado</li>
@@ -43,7 +43,7 @@ const SkillSection = () =>
             </div>
         </div>
     </div>
-    <div className="w-full flex sm:flex-row flex-col mx-auto mt-10 desktop:px-20">
+    <div className="w-full flex sm:flex-row flex-col mx-auto sm:mt-32 mt-20  desktop:px-20">
         <div className="desktop:w-1/3 w-full container mx-auto desktop:px-14 px-12">
             <h1 className="text-white text-2xl font-medium font-sans">FRONT END</h1>
             <BarComponent
@@ -52,7 +52,7 @@ const SkillSection = () =>
                 stylePercent={'75%'}
             />
             <BarComponent
-                title={'GarsbyJS'}
+                title={'GatsbyJS'}
                 percent={'70%'}
                 stylePercent={'70%'}
             />

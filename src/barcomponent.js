@@ -4,7 +4,7 @@ const BarComponent = ({title,percent,stylePercent}) => (
     <div className="relative pt-1">
         <div className="flex mb-2 items-center justify-between">
             <div>
-                <span className="text-xs font-IBM font-semibold inline-block rounded-full text-themeBlue bg-themeDarkBlue">
+                <span className="text-xs font-light inline-block text-themeBlue">
                     {title}
                 </span>
             </div>
