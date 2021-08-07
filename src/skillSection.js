@@ -3,7 +3,7 @@ import CircleBar from './circleBar';
 import BarComponent from './barcomponent';
 
 const SkillSection = () =>
-<section className="bg-themeDarkBlue pb-40">
+<section className=" pb-40">
     <div className="sm:flex sm:flex-row flex-col">
         <div className="sm:w-1/2 w-w-full">
             <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center">Habilidades</h1>
@@ -31,7 +31,7 @@ const SkillSection = () =>
             </div>
         </div>
         <div className="sm:w-1/2 w-full sm:mb-0">
-            <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center mb-5 mt-10 desktop:mt-0  text-center">Habilidades No Tecnicas</h1>
+            <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center mb-5 mt-10 sm:mt-0 desktop:mt-0  text-center">Habilidades No Tecnicas</h1>
             <div className="flex justify-center">
                 <ul className="text-white font-IBM font-semibold text-md leading-loose tracking-wide">
                     <li><font className="text-themeBlue">&#8226; </font>Analisis de Requerimientos</li>
