@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Menu from './menu';
 import Icons from './icons'
 import App from './App';
 import AcercaDeMi from './acercade';
@@ -11,6 +12,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Menu/>
     <Icons/>
     <App />
     <AcercaDeMi/>

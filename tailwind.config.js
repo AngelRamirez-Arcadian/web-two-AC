@@ -13,6 +13,15 @@ module.exports = {
         themeBlue: '#6196E4',
         themeDarkBlue: '#020215',
       },
+      height: {
+        0.5: '2px',
+      },
+      width: {
+        7.5: '30px',
+      },
+      padding: {
+        0.5: '2px'
+      },
     },
   },
   variants: {

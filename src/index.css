@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
   display: none;
 }

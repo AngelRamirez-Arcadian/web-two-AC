@@ -4,7 +4,7 @@ import Logo from './images/logo.png'
 
 function App() {
   return (
-    <main className="w-full flex inset-0 font-sans text-white-900">
+    <main id="home" className="w-full flex inset-0 font-sans text-white-900">
     <div
       className="w-full inset-0 h-screen text-white flex 
                   items-center font-extrabold 
