@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const menu = {
-  home: '',
+  home: 'INICIO',
   about: 'ACERCA DE MI',
   skills: 'HABILIDADES',
   experience: 'EXPERIENCIA'

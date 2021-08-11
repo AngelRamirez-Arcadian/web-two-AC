@@ -1,8 +1,9 @@
 import React from 'react'
 
 const Experiencia = () => (
-    <div>
-        <ul className="timeline">
+    <div id="experience">
+        <h1 className="text-themeBlue font-bold text-2xl flex justify-center mb-10">EXPERIENCIA</h1>
+        <ul className="timeline sm:mr-32 mr-10">
             <li className="timeline-event">
                 <label className="timeline-event-icon"></label>
                 <div className="timeline-event-copy">
