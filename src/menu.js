@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const menu = {
-  home: '',
+  home: 'INICIO',
   about: 'ACERCA DE MI',
   skills: 'HABILIDADES',
   experience: 'EXPERIENCIA'
@@ -42,7 +42,7 @@ const LineContainer = styled.a`
 const Menu = () => (
   <nav
     className="fixed transform -translate-y-1/2 
-              right-5 sm:top-1/2 w-auto top-1/2"
+              right-5 sm:top-1/2 w-auto top-1/2 hidden desktop:block"
   >
     <div className="flex flex-col">
       {Object.entries(menu).map(([hash, value]) => (
