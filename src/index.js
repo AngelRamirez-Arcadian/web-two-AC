@@ -7,6 +7,7 @@ import App from './App';
 import AcercaDeMi from './acercade';
 import AcercaTwo from './acercadetwo';
 import SkillSection from './skillSection';
+import Experiencia from './experiencia';
 import BackgroundAnimate from './backgroundAnimate';
 import reportWebVitals from './reportWebVitals';
 
@@ -18,6 +19,7 @@ ReactDOM.render(
     <AcercaDeMi/>
     <AcercaTwo/>
     <SkillSection/>
+    <Experiencia/>
     <BackgroundAnimate/>
   </React.StrictMode>,
   document.getElementById('root')
