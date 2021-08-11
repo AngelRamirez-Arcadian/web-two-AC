@@ -6,7 +6,7 @@ import Yo from './images/imgrelax.svg'
 
 
 const AcercaDeMi = () =>(
-        <div className="w-full min-h-full text-white flex
+        <div id="about" className="w-full min-h-full text-white flex
                         text-xl
                         font-sans font-extralight pb-28">
             <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">

@@ -3,7 +3,7 @@ import CircleBar from './circleBar';
 import BarComponent from './barcomponent';
 
 const SkillSection = () =>
-<section className=" pb-40">
+<section id="skills" className=" pb-40">
     <div className="sm:flex sm:flex-row flex-col">
         <div className="sm:w-1/2 w-w-full">
             <h1 className="text-themeBlue font-semibold sm:font-bold text-3xl flex justify-center sm:mb-20 mb-10">Habilidades</h1>
