@@ -1,17 +1,57 @@
 import React from 'react'
+import LinkHover from './linkHover';
+
 
 const Experiencia = () => (
-    <div id="experience">
+    <div id="experience" className="text-white">
         <h1 className="text-themeBlue font-bold text-2xl flex justify-center mb-10">EXPERIENCIA</h1>
-        <ul className="timeline sm:mr-32 mr-10">
+        <ul className="timeline sm:mr-24 sm:ml-24 mr-20">
             <li className="timeline-event">
                 <label className="timeline-event-icon"></label>
                 <div className="timeline-event-copy">
-                    <p className="timeline-event-thumbnail">April 2011 - heute</p>
-                    <h3>Geil,Danke! GmbH</h3>
-                    <h4>Geschäftsführerin eines Web-Studios</h4>
-                    <p><strong>Schwerpunkt: Frontend-Entwicklung</strong><br/>Entwickeln von anspruchsvollen, animierten, responsive und adaptive Webseiten mit HTML5, SCSS, jQuery; für alle Browser, optimiert für Desktop, Notebook, Smartphones und Tablets (iOS, Android, Windows).</p>
-                    <p><strong>Projektmanagement mit Scrum</strong><br/>Ständiges Verbessern des agilen Entwicklungsprozesses beispielsweise durch Grunt, Yeoman, GIT, JIRA und BrowserStack.</p>
+                    <p className="timeline-event-thumbnail text-themeBlue font-extralight sm:mt-0 mt-1">Diciembre 2020 - Actualidad</p>
+                    <LinkHover 
+                                classNames={'font-bold text-4xl mb-1'}
+                                url={'https://blissddm.xyz/es/'}
+                                text={'Bliss DDM'}
+                            />
+                    <h3 className="text-xl font-bold mb-4">Desarrollo Web</h3>
+                    <p className="text-justify font-light">
+                        <strong>Portafolio Personal: </strong>
+                        Desarrollo de portafolio, pagina web personal utilizando tecnologias de dessarrollo como GatsbyJS, Tailwind CSS, utilizando
+                        tecnologias de diseño y afectos agradables para el usuario.
+                    </p>
+                    <p>
+                        <strong>Proyectos en ReactJS:</strong><br/>
+                        <ul>
+                            <li className="text-justify font-light">
+                                <LinkHover 
+                                    classNames={'text-themeBlue font-medium'}
+                                    url={'https://fervent-borg-fc19d5.netlify.app/'}
+                                    text={'Administrador de Pacientes'}
+                                />
+                                &nbsp;: Aplicacion Web para la administracion de citas en veterinarias utilizando la tecnologia de ReactJS.
+                            </li>
+                            <li className="text-justify font-light">
+                                <LinkHover 
+                                    classNames={'text-themeBlue font-medium'}
+                                    url={'https://frosty-thompson-be58ba.netlify.app/'}
+                                    text={'Prespuesto y gasto semanal'}
+                                />
+                                &nbsp;: Aplicacion Web para el calculo de presupuesto y la admistracion del gasto semanal, adaptado a cualquier presupuesto
+                                 con la tecnologia de ReactJS.
+                            </li>
+                            <li className="text-justify font-light">
+                                <LinkHover 
+                                    classNames={'text-themeBlue font-medium'}
+                                    url={'https://condescending-wright-d1e099.netlify.app/'}
+                                    text={'Cotizador de Seguros'}
+                                />
+                                &nbsp;: Aplicacion Web para el calculo de presupuesto y la admistracion del gasto semanal, adaptado a cualquier presupuesto
+                                 con la tecnologia de ReactJS.
+                            </li>
+                        </ul>
+                    </p>
                 </div>
             </li>
             <li class="timeline-event">

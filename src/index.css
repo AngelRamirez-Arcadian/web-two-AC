@@ -415,19 +415,6 @@ body {
 }
 
 /* TIMELINE CSS*/
-
-/* Variables */
-/* Fonts */
-body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.05em;
-  color: white;
-  position: absolute;
-}
-
 /* Layout */
 * {
   -moz-box-sizing: border-box;
@@ -463,19 +450,13 @@ body {
 
 
 .timeline-event-copy {
-  padding: 2em;
+  padding-top: 2em;
   position: relative;
   top: -1.875em;
   left: 4em;
-  width: 80%;
+  width: 90%;
 }
-.timeline-event-copy h3 {
-  font-size: 1.75em;
-}
-.timeline-event-copy h4 {
-  font-size: 1.2em;
-  margin-bottom: 1.2em;
-}
+
 .timeline-event-copy strong {
   font-weight: 700;
 }
@@ -492,8 +473,8 @@ body {
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #020215;
-  outline: 10px solid #6196E4;
+  background-color: #6196E4;
+  outline: 10px solid #020215;
   display: block;
   margin: 0.5em 0.5em 0.5em -0.5em;
   position: absolute;
