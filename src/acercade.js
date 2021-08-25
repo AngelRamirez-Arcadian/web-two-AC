@@ -7,12 +7,11 @@ import Yo from './images/imgrelax.svg'
 
 const AcercaDeMi = () =>(
         <div id="about" className="w-full min-h-full text-white flex
-                        text-xl
-                        font-sans font-extralight pb-28">
+                        text-xl mt-40 font-sans font-extralight pb-28">
             <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">
                 <div className="md:w-1/2 w-full flex-1">
                     <div className="text-justify sm:text-left mb-10">
-                        <p className="text-themeBlue font-bold text-2xl mb-1">ACERCA DE MI</p>
+                        <p className="text-themeBlue font-bold text-3xl mb-1">ACERCA DE MI</p>
                         <p className="mb-2">
                             Desarrollador de Software, CEO en&nbsp;
                             <LinkHover 

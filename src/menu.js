@@ -25,6 +25,10 @@ const Line = styled.div`
   &:before {
       content: '${menuTitle => menuTitle.content}';
   }
+  &.line-active{
+    height: 60px;
+    border: 2px solid #6196E4;
+  }
 `
 const LineContainer = styled.a`
   &:hover ${Line} {
@@ -48,6 +52,7 @@ const Menu = () => (
       {Object.entries(menu).map(([hash, value]) => (
       <LineContainer className="p-0.5" href={'#' + hash}>
         <Line
+          id={value}
           className="h-5 w-5 border-2 border-themeBlue
                     rounded-full m-5" 
           content={value}

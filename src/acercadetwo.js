@@ -3,7 +3,7 @@ import Yo from './images/imgrelax.svg'
 import LinkHover from './linkHover';
 
 const AcercaTwo = () => (
-    <div className="text-white w-full min-h-full text-xl font-sans font-extralight pb-32">
+    <div id="about" className="text-white w-full min-h-full text-xl font-sans font-extralight pb-32 mb-40">
         <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">
             <div className="flex-1 md:w-1/2 w-full flex justify-center items-center mt-2 sm:mt-0">
                 <div className="flex justify-center desktop:justify-between mt-10 desktop:mt-0">

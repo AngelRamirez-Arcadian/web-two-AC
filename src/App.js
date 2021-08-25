@@ -1,18 +1,22 @@
 import React from 'react';
-import ParagraphHover from './paragraphHover';
 import Logo from './images/logo.png'
 
 function App() {
   return (
-    <main id="home" className="w-full flex inset-0 font-sans text-white-900">
+    <main id="home" className="class w-full flex inset-0 font-sans text-white-900">
     <div
       className="w-full inset-0 h-screen text-white flex 
                   items-center font-extrabold 
                   text-xl"
     >
-      <ParagraphHover/>
-      <div className="w-1/2 hidden desktop:block">
-        <img className="h-56 w-56 container mx-auto" src={Logo} />
+      <div className="w-full flex-1">
+        <h1 className="font-extrabold text-7xl desktop:text-9xl text-center">
+            ANGEL
+        </h1>
+        <h1 className="text-themeBlue font-extrabold text-7xl desktop:text-9xl text-center">
+            RAMIREZ
+        </h1>
+        <h1/>
       </div>
     </div>
     {/* mailto:hi@danrocha.xyz?subject=Email%20Subject&body=Body%20Text */}
