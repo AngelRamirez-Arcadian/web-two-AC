@@ -1,22 +1,20 @@
 import React from 'react';
+import Title from './titles';
 import LinkHover from './linkHover';
-import Logo from './images/logo.png'
 import Acerca from './images/imgcoding.svg'
-import Yo from './images/imgrelax.svg'
-
 
 const AcercaDeMi = () =>(
         <div id="about" className="w-full min-h-full text-white flex
-                        text-xl mt-40 font-sans font-extralight pb-28">
-            <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">
+                        text-xl font-sans font-thin mb-40">
+            <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row mt-20">
                 <div className="md:w-1/2 w-full flex-1">
                     <div className="text-justify sm:text-left mb-10">
-                        <p className="text-themeBlue font-bold text-3xl mb-1">ACERCA DE MI</p>
+                        <Title>ACERCA DE MI</Title>
                         <p className="mb-2">
                             Desarrollador de Software, CEO en&nbsp;
                             <LinkHover 
                                 url={'https://www.facebook.com/ArcadianCorp'}
-                                text={'Arcadian Corp.'}
+                                text={'Legacyier'}
                             />
                         </p>
                         <p>
@@ -25,14 +23,14 @@ const AcercaDeMi = () =>(
                             una empresa llamada&nbsp;
                             <LinkHover 
                                 url={'https://www.facebook.com/ArcadianCorp'}
-                                text={'Arcadian Corp.'}
+                                text={'Legacyier'}
                             />
                         </p>
                     </div>
                     <div className="text-justify sm:text-left">
-                        <p className="text-themeBlue font-bold text-2xl mb-3">
+                        <Title>
                             ¿A QUE ME DEDICO?
-                        </p>
+                        </Title>
                         <p className="mb-5">
                             Ofrezco mis servicios y conocimiento en ingenieria de software 
                             a pequeñas, medianas y grandes empresas. Solucion en desarrollo

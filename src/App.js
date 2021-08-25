@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from './images/logo.png'
 
 function App() {
   return (
