@@ -1,4 +1,5 @@
 import React from 'react';
+import RotatingText from './rotatingText';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <h1 className="text-themeBlue font-extrabold text-7xl desktop:text-9xl text-center">
             RAMIREZ
         </h1>
-        <h1/>
+        <RotatingText/>
       </div>
     </div>
     {/* mailto:hi@danrocha.xyz?subject=Email%20Subject&body=Body%20Text */}

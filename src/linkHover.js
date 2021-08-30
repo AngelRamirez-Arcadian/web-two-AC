@@ -27,7 +27,7 @@ const LinkHover = ({classNames,url,text}) => (
         target="_blank"
         rel="noreferrer"
     >
-        {text}{' ↑'}
+        {text}{' »'}
     </Link>
 )
  

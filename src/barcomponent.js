@@ -2,7 +2,7 @@ import React from 'react';
 
 const BarComponent = ({title,percent,stylePercent}) => (
     <div className="relative pt-1">
-        <div className="flex mb-2 items-center justify-between">
+        <div className="flex items-center justify-between">
             <div>
                 <span className="text-xs font-light inline-block text-themeBlue">
                     {title}
