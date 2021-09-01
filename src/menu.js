@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const menu = {
-  home: '',
+  home: 'INICIO',
   about: 'ACERCA DE MI',
+  experience: 'EXPERIENCIA',
   skills: 'HABILIDADES',
-  experience: 'EXPERIENCIA'
+  
 }
 
 const Line = styled.div`
@@ -25,6 +26,10 @@ const Line = styled.div`
   &:before {
       content: '${menuTitle => menuTitle.content}';
   }
+  &.line-active{
+    height: 60px;
+    border: 2px solid #6196E4;
+  }
 `
 const LineContainer = styled.a`
   &:hover ${Line} {
@@ -42,12 +47,13 @@ const LineContainer = styled.a`
 const Menu = () => (
   <nav
     className="fixed transform -translate-y-1/2 
-              right-5 sm:top-1/2 w-auto top-1/2"
+              right-5 sm:top-1/2 h-full hidden sm:block"
   >
-    <div className="flex flex-col">
+    <div className="h-full flex flex-col justify-between container mx-auto py-16">
       {Object.entries(menu).map(([hash, value]) => (
       <LineContainer className="p-0.5" href={'#' + hash}>
         <Line
+          id={value}
           className="h-5 w-5 border-2 border-themeBlue
                     rounded-full m-5" 
           content={value}

@@ -2,6 +2,9 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    maxWidth: {
+      '1000': '1000px'
+     },
     extend: {
       fontFamily: {
         IBM: ['IBM Plex Mono', 'monospace'],
@@ -21,6 +24,8 @@ module.exports = {
         7.5: '30px',
       },
       padding: {
+        0.05: '0.05px',
+        0.1: '1px',
         0.5: '2px'
       },
     },

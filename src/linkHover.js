@@ -20,14 +20,14 @@ const Link = styled.a`
 		transform: scaleX(1);
 	}   `
 
-const LinkHover = ({url,text}) => (
+const LinkHover = ({classNames,url,text}) => (
     <Link
-        className="text-themeBlue inline-block"
+        className={`${classNames} text-themeBlue inline-block`}
         href={url}
         target="_blank"
         rel="noreferrer"
     >
-        {text}
+        {text}{' »'}
     </Link>
 )
  

@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from './titles';
 import Yo from './images/imgrelax.svg'
 import LinkHover from './linkHover';
 
 const AcercaTwo = () => (
-    <div className="text-white w-full min-h-full text-xl font-sans font-extralight pb-32">
+    <div id="about" className="text-white w-full min-h-full text-xl font-sans font-extralight sm:mb-80 mb-28">
         <div className="desktop:mx-32 mx-7 flex flex-col md:flex-row">
             <div className="flex-1 md:w-1/2 w-full flex justify-center items-center mt-2 sm:mt-0">
                 <div className="flex justify-center desktop:justify-between mt-10 desktop:mt-0">
@@ -11,7 +12,7 @@ const AcercaTwo = () => (
                 </div>
             </div>
             <div className="md:w-1/2 w-full flex-1 order-first md:order-last text-justify sm:text-left flex justify-center flex-col">
-                <p className="text-themeBlue font-bold text-2xl mb-1">MAS SOBRE MI</p>
+                <Title>MAS SOBRE MI</Title>
                 <p className="mt-2">
                     Tengo 22 años, soy alumno de la&nbsp;
                     <LinkHover
