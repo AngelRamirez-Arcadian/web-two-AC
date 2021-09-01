@@ -4,8 +4,9 @@ import styled from 'styled-components'
 const menu = {
   home: 'INICIO',
   about: 'ACERCA DE MI',
+  experience: 'EXPERIENCIA',
   skills: 'HABILIDADES',
-  experience: 'EXPERIENCIA'
+  
 }
 
 const Line = styled.div`

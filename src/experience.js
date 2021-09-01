@@ -92,7 +92,7 @@ class Experience extends Component {
         const xHolcim = this.state.divContainerHolcim;
         const xLegacyier = this.state.divContainerLegacyier;
     return(
-    <div className="text-base desktop:text-lg font-sans font-thin">
+    <div id="experience" className="text-base desktop:text-lg font-sans font-thin">
         <h1 className="text-themeBlue font-bold text-3xl flex justify-center">Experiencia</h1>
         <TimelineContainer>
             <div className="event flex flex-col">
