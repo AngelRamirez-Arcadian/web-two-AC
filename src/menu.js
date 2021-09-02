@@ -47,7 +47,7 @@ const LineContainer = styled.a`
 const Menu = () => (
   <nav
     className="fixed transform -translate-y-1/2 
-              right-5 sm:top-1/2 h-full hidden sm:block"
+              right-5 sm:top-1/2 h-full hidden desktop:block"
   >
     <div className="h-full flex flex-col justify-between container mx-auto py-16">
       {Object.entries(menu).map(([hash, value]) => (
