@@ -80,15 +80,33 @@ const MenuMobile = () => {
 
     const menuRef = useRef(null)
     const menuMobileRef = useRef(null)
+    const homeRef = useRef(null)
+    const aboutRef = useRef(null)
+    const experienceRef = useRef(null)
+    const skillsRef = useRef(null)
 
     useEffect(() => {
         menuRef.current.addEventListener("click", () => {
           menuRef.current.classList.toggle('open')
           menuMobileRef.current.classList.toggle('-translate-x-full')
         })
-
-        
-    }, [menuRef,menuMobileRef])
+        homeRef.current.addEventListener("click", () => {
+          menuMobileRef.current.classList.toggle('-translate-x-full')
+          menuRef.current.classList.toggle('open')
+        })
+        aboutRef.current.addEventListener("click", () => {
+          menuMobileRef.current.classList.toggle('-translate-x-full')
+          menuRef.current.classList.toggle('open')
+        })
+        experienceRef.current.addEventListener("click", () => {
+          menuMobileRef.current.classList.toggle('-translate-x-full')
+          menuRef.current.classList.toggle('open')
+        })
+        skillsRef.current.addEventListener("click", () => {
+          menuMobileRef.current.classList.toggle('-translate-x-full')
+          menuRef.current.classList.toggle('open')
+        })
+    }, [homeRef,aboutRef,experienceRef,skillsRef,menuRef,menuMobileRef])
 
     return(
     <div>
@@ -111,7 +129,7 @@ const MenuMobile = () => {
           className="bg-themeDarkBlue text-blue-100 w-64 space-y-6 
                       py-7 px-2 fixed inset-y-0 left-0 transform 
                       -translate-x-full block desktop:hidden z-50
-                      transition duration-200 ease-in-out"
+                      transition duration-300 ease-in-out"
         >
           <a
               href="#" 
@@ -137,6 +155,7 @@ const MenuMobile = () => {
 
             <nav>
                 <a
+                  ref={homeRef}
                   href="#home" 
                   className="block py-2.5 px-4 rounded-lg transition
                             duration-200 hover:bg-blue-700"
@@ -144,6 +163,7 @@ const MenuMobile = () => {
                     Inicio
                 </a>
                 <a
+                  ref={aboutRef}
                   href="#about" 
                   className="block py-2.5 px-4 rounded-lg transition
                             duration-200 hover:bg-blue-700"
@@ -151,6 +171,7 @@ const MenuMobile = () => {
                     Acerca de Mi
                 </a>
                 <a
+                  ref={experienceRef}
                   href="#experience" 
                   className="block py-2.5 px-4 rounded-lg transition
                             duration-200 hover:bg-blue-700"
@@ -158,6 +179,7 @@ const MenuMobile = () => {
                     Experiencia
                 </a>
                 <a
+                  ref={skillsRef}
                   href="#skills" 
                   className="block py-2.5 px-4 rounded-lg transition
                             duration-200 hover:bg-blue-700"
