@@ -79,30 +79,94 @@ const Hamburguer = styled.div`
 const MenuMobile = () => {
 
     const menuRef = useRef(null)
+    const menuMobileRef = useRef(null)
+
     useEffect(() => {
-        const menu = document.getElementById('nav-icon3');
-        const navActive = document.querySelector('.navActive');
-        menu.addEventListener("click", () => {
-            menu.classList.toggle('open')
+        menuRef.current.addEventListener("click", () => {
+          menuRef.current.classList.toggle('open')
+          menuMobileRef.current.classList.toggle('-translate-x-full')
         })
 
         
-    }, [menuRef])
+    }, [menuRef,menuMobileRef])
 
     return(
-    <div className="fixed transform -translate-y-1/2 right-12 sm:top-0 block desktop:hidden">
-        <Hamburguer>
-            <div 
-            ref={menuRef}
-            id="nav-icon3"
-            className="navActive"
+    <div>
+      <div className="fixed transform -translate-y-1/2 right-12 sm:top-0 block desktop:hidden z-50">
+          <Hamburguer>
+              <div 
+              ref={menuRef}
+              id="nav-icon3"
+              className="navActive"
+              >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </Hamburguer>
+      </div>
+      <div
+          ref={menuMobileRef}
+          className="bg-themeDarkBlue text-blue-100 w-64 space-y-6 
+                      py-7 px-2 fixed inset-y-0 left-0 transform 
+                      -translate-x-full block desktop:hidden z-50
+                      transition duration-200 ease-in-out"
+        >
+          <a
+              href="#" 
+              className="text-white flex items-center space-x-2 px-4"
             >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </Hamburguer>
+              <svg
+                  xmlns="http://www.w3.org/2000/svg" 
+                  class="h-8 w-8" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor">
+                  <path
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      stroke-width="2" 
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /
+                  >
+              </svg>
+              <span className="text-2xl font-extrabold">
+                  Angel Ramirez
+              </span>
+            </a>
+
+            <nav>
+                <a
+                  href="#home" 
+                  className="block py-2.5 px-4 rounded-lg transition
+                            duration-200 hover:bg-blue-700"
+                >
+                    Inicio
+                </a>
+                <a
+                  href="#about" 
+                  className="block py-2.5 px-4 rounded-lg transition
+                            duration-200 hover:bg-blue-700"
+                >
+                    Acerca de Mi
+                </a>
+                <a
+                  href="#experience" 
+                  className="block py-2.5 px-4 rounded-lg transition
+                            duration-200 hover:bg-blue-700"
+                >
+                    Experiencia
+                </a>
+                <a
+                  href="#skills" 
+                  className="block py-2.5 px-4 rounded-lg transition
+                            duration-200 hover:bg-blue-700"
+                >
+                    Habilidades
+                </a>
+            </nav>
+
+        </div>
     </div>
     )
 }
