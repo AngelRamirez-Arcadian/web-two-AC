@@ -1,9 +1,10 @@
 import React, {useRef, useEffect} from 'react';
+import SocialIcon from './socialicons';
 import styled from 'styled-components'
 
 const Hamburguer = styled.div`
   #nav-icon3 {
-    width: 38px;
+    width: 35px;
     height: 30px;
     margin: 25px auto;
     position: fixed;
@@ -20,7 +21,7 @@ const Hamburguer = styled.div`
 #nav-icon3 span {
   display: block;
   position: absolute;
-  height: 4.5px;
+  height: 3.5px;
   width: 100%;
   background: #6196E4;
   border-radius: 9999px;
@@ -127,28 +128,15 @@ const MenuMobile = () => {
       <div
           ref={menuMobileRef}
           className="bg-themeDarkBlue text-blue-100 w-64 space-y-6 
-                      py-7 px-2 fixed inset-y-0 left-0 transform 
+                      py-28 fixed inset-y-0 left-0 transform
                       -translate-x-full block desktop:hidden z-50
-                      transition duration-300 ease-in-out"
+                      transition duration-1000 ease-in-out border-themeBlue border-r-4"
         >
           <a
               href="#" 
-              className="text-white flex items-center space-x-2 px-4"
+              className="text-white flex space-x-2 px-4 justify-center"
             >
-              <svg
-                  xmlns="http://www.w3.org/2000/svg" 
-                  class="h-8 w-8" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor">
-                  <path
-                      stroke-linecap="round" 
-                      stroke-linejoin="round" 
-                      stroke-width="2" 
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /
-                  >
-              </svg>
-              <span className="text-2xl font-extrabold">
+              <span className="text-2xl font-extrabold text-themeBlue">
                   Angel Ramirez
               </span>
             </a>
@@ -157,37 +145,46 @@ const MenuMobile = () => {
                 <a
                   ref={homeRef}
                   href="#home" 
-                  className="block py-2.5 px-4 rounded-lg transition
-                            duration-200 hover:bg-blue-700"
+                  className="py-4 flex justify-center transition
+                            duration-500 hover:bg-themeBlue
+                            border-t border-b border-opacity-10 border-themeBlue"
                 >
                     Inicio
                 </a>
                 <a
                   ref={aboutRef}
                   href="#about" 
-                  className="block py-2.5 px-4 rounded-lg transition
-                            duration-200 hover:bg-blue-700"
+                  className="py-4 flex justify-center transition
+                            duration-500 hover:bg-themeBlue
+                            border-t border-b border-opacity-10 border-themeBlue"
                 >
                     Acerca de Mi
                 </a>
                 <a
                   ref={experienceRef}
                   href="#experience" 
-                  className="block py-2.5 px-4 rounded-lg transition
-                            duration-200 hover:bg-blue-700"
+                  className="py-4 flex justify-center transition
+                            duration-500 hover:bg-themeBlue
+                            border-t border-b border-opacity-10 border-themeBlue"
                 >
                     Experiencia
                 </a>
                 <a
                   ref={skillsRef}
                   href="#skills" 
-                  className="block py-2.5 px-4 rounded-lg transition
-                            duration-200 hover:bg-blue-700"
+                  className="py-4 flex justify-center transition
+                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                            border-t border-b border-opacity-10 border-themeBlue"
                 >
                     Habilidades
                 </a>
             </nav>
-
+            <div>
+              <SocialIcon
+                  iconName="facebook"
+                  url="https://www.facebook.com/joseangel.ramirezsanchez.92"
+              />
+            </div>
         </div>
     </div>
     )

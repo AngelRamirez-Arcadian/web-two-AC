@@ -39,7 +39,7 @@ const images = {
   }
   
   const SocialImage = styled.img`
-    transition: opacity 300ms;
+    transition: opacity 1000ms;
   `
   const AbsImage = styled(SocialImage)`
     position: absolute;
@@ -57,7 +57,7 @@ const images = {
     height: 42px;
     ${HoverImage},
     ${ActiveImage} {
-      opacity: 0.2;
+      opacity: 0.09;
     }
     ${DefaultImage} {
       opacity: 1;
