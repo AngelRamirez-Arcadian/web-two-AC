@@ -1,5 +1,17 @@
 import React, {useRef, useEffect} from 'react';
 import styled from 'styled-components'
+import  {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"; 
+
+import App from './App';
+import AcercaDeMi from './acercade'
+import AcercaTwo from './acercadetwo';
+import Experience from './experience';
+import SkillSection from './skillSection'
 
 const Hamburguer = styled.div`
   #nav-icon3 {
@@ -109,7 +121,7 @@ const MenuMobile = () => {
     }, [homeRef,aboutRef,experienceRef,skillsRef,menuRef,menuMobileRef])
 
     return(
-    <div>
+    <Router>
       <div className="fixed transform -translate-y-1/2 right-12 sm:top-0 block desktop:hidden z-50">
           <Hamburguer>
               <div 
@@ -141,45 +153,60 @@ const MenuMobile = () => {
             </a>
 
             <nav>
-                <a
-                  ref={homeRef}
-                  href="#home" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Inicio
-                </a>
-                <a
-                  ref={aboutRef}
-                  href="#about" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Acerca de Mi
-                </a>
-                <a
-                  ref={experienceRef}
-                  href="#experience" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Experiencia
-                </a>
-                <a
-                  ref={skillsRef}
-                  href="#skills" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Habilidades
-                </a>
+              <Link
+                ref={homeRef}
+                to="/"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Inicio
+              </Link>
+              <Link
+                ref={aboutRef}
+                to="/Acerca"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Acerca de Mi
+              </Link>
+              <Link
+                ref={experienceRef}
+                to="/Experiencia"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Experiencia
+              </Link>
+              <Link
+                ref={skillsRef}
+                to="/Habilidades"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Habilidades
+              </Link>
             </nav>
         </div>
-    </div>
+        <Switch>
+          <Route path="/" exact>
+            <App/>
+          </Route>
+          <Route path="/Acerca">
+            <AcercaDeMi/>
+            <AcercaTwo/>
+          </Route>
+          <Route path="/Experiencia">
+            <Experience/>
+          </Route>
+          <Route path="/Habilidades">
+            <SkillSection/>
+          </Route>
+        </Switch>
+    </Router>
     )
 }
  

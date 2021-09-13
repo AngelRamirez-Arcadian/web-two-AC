@@ -6,6 +6,9 @@ module.exports = {
       '1000': '1000px'
      },
     extend: {
+      translate: {
+        '99': '99%',
+      },
       fontFamily: {
         IBM: ['IBM Plex Mono', 'monospace'],
       },
