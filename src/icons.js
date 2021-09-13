@@ -10,7 +10,7 @@ const Icons = () => (
         <div className="sm:w-full w-60 flex flex-row justify-center">
             <SocialIcon 
                 iconName="github" 
-                url="https://github.com/AngelRamirez-Arcadian" 
+                url="https://github.com/ImJars" 
             />
             <SocialIcon
                 iconName="facebook"
