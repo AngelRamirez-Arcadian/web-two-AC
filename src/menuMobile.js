@@ -1,5 +1,4 @@
 import React, {useRef, useEffect} from 'react';
-import SocialIcon from './socialicons';
 import styled from 'styled-components'
 
 const Hamburguer = styled.div`
@@ -127,7 +126,7 @@ const MenuMobile = () => {
       </div>
       <div
           ref={menuMobileRef}
-          className="bg-themeDarkBlue text-blue-100 w-64 space-y-6 
+          className="bg-themeDarkBlue text-white w-64 space-y-6 
                       py-28 fixed inset-y-0 left-0 transform
                       -translate-x-full block desktop:hidden z-50
                       transition duration-1000 ease-in-out border-themeBlue border-r-4"
@@ -146,7 +145,7 @@ const MenuMobile = () => {
                   ref={homeRef}
                   href="#home" 
                   className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue
+                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
                             border-t border-b border-opacity-10 border-themeBlue"
                 >
                     Inicio
@@ -155,7 +154,7 @@ const MenuMobile = () => {
                   ref={aboutRef}
                   href="#about" 
                   className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue
+                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
                             border-t border-b border-opacity-10 border-themeBlue"
                 >
                     Acerca de Mi
@@ -164,7 +163,7 @@ const MenuMobile = () => {
                   ref={experienceRef}
                   href="#experience" 
                   className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue
+                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
                             border-t border-b border-opacity-10 border-themeBlue"
                 >
                     Experiencia
@@ -179,12 +178,6 @@ const MenuMobile = () => {
                     Habilidades
                 </a>
             </nav>
-            <div>
-              <SocialIcon
-                  iconName="facebook"
-                  url="https://www.facebook.com/joseangel.ramirezsanchez.92"
-              />
-            </div>
         </div>
     </div>
     )
