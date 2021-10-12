@@ -10,7 +10,7 @@ html {
   display: none;
 }
 .react-rotating-text-cursor {
-    animation: blinking-cursor 0.7s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+    animation: blinking-cursor 0.7s cubic-bezier(0.68, 0.01, 0.01, 0.1) 0s infinite;
     color: white;
   }
   
@@ -405,81 +405,11 @@ body {
     opacity: 0;
   }
   50% {
-    opacity: .02;
+    opacity: .05;
   }
   100% {
     -webkit-transform: translateY(-700px) rotate(600deg);
     transform: translateY(-700px) rotate(600deg);
     opacity: 0;
   }
-}
-
-/* TIMELINE CSS*/
-/* Layout */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* Styling */
-.timeline {
-  position: relative;
-}
-.timeline:before {
-  background-color: #6196E4;
-  content: '';
-  margin-left: -1px;
-  position: absolute;
-  top: 0;
-  left: 2em;
-  width: 2px;
-  height: 100%;
-}
-
-.timeline-event {
-  position: relative;
-}
-.timeline-event:hover .timeline-event-icon {
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  background-color: white;
-}
-
-
-.timeline-event-copy {
-  padding-top: 2em;
-  position: relative;
-  top: -1.875em;
-  left: 4em;
-  width: 90%;
-}
-
-.timeline-event-copy strong {
-  font-weight: 700;
-}
-.timeline-event-copy p:not(.timeline-event-thumbnail) {
-  padding-bottom: 1.2em;
-}
-
-.timeline-event-icon {
-  -moz-transition: -moz-transform 0.2s ease-in;
-  -o-transition: -o-transform 0.2s ease-in;
-  -webkit-transition: -webkit-transform 0.2s ease-in;
-  transition: transform 0.2s ease-in;
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  background-color: #6196E4;
-  outline: 10px solid #020215;
-  display: block;
-  margin: 0.5em 0.5em 0.5em -0.5em;
-  position: absolute;
-  top: 0;
-  left: 2em;
-  width: 1em;
-  height: 1em;
 }

@@ -1,9 +1,11 @@
 import React from 'react';
+import BackgroundAnimate from './backgroundAnimate';
 import RotatingText from './rotatingText';
 
-function App() {
+const App = () => {
   return (
     <main id="home" className="class w-full flex inset-0 font-sans text-white-900">
+    <BackgroundAnimate/>
     <div
       className="w-full inset-0 h-screen text-white flex 
                   items-center font-extrabold 

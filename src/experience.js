@@ -114,7 +114,7 @@ class Experience extends Component {
                     xBLISS && (
 
                 <div
-                    className="timeline-content">
+                    className="timeline-content transition translate-x-10 duration-500">
                     <p>
                         Diseño y desarrollo de Aplicaciones Web, Paginas Web, utilizando las mejores tecnologias actuales como GatsbyJS, ReactJS, dando como meta la experiencia de usuario y desarrollador en diversos proyectos:
                     </p>

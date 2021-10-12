@@ -6,7 +6,6 @@ const menu = {
   about: 'ACERCA DE MI',
   experience: 'EXPERIENCIA',
   skills: 'HABILIDADES',
-  
 }
 
 const Line = styled.div`
@@ -51,10 +50,10 @@ const Menu = () => (
   >
     <div className="h-full flex flex-col justify-between container mx-auto py-16">
       {Object.entries(menu).map(([hash, value]) => (
-      <LineContainer className="p-0.5" href={'#' + hash}>
+      <LineContainer key={hash} className="p-0.5" href={'#' + hash}>
         <Line
           id={value}
-          className="h-5 w-5 border-2 border-themeBlue
+          className="h-4 w-4 border-2 border-themeBlue
                     rounded-full m-5" 
           content={value}
         />
@@ -64,5 +63,6 @@ const Menu = () => (
     </div>
   </nav>
 )
+
 
 export default Menu

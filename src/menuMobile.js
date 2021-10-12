@@ -1,4 +1,5 @@
 import React, {useRef, useEffect} from 'react';
+import Profile from './images/profile.jpg'
 import styled from 'styled-components'
 import  {
   BrowserRouter as Router,
@@ -87,6 +88,12 @@ const Hamburguer = styled.div`
   left: 50%;
 }
 `
+const GlassMenu = styled.div`
+  backdrop-filter: blur(5px) saturate(200%);
+  --webkit-backdrop-filter: blur(5px) saturate;
+  background-color: rgba(2,2,21,0.8);
+  border-radius: 0;
+`
 
 const MenuMobile = () => {
 
@@ -118,6 +125,7 @@ const MenuMobile = () => {
           menuMobileRef.current.classList.toggle('-translate-x-full')
           menuRef.current.classList.toggle('open')
         })
+        
     }, [homeRef,aboutRef,experienceRef,skillsRef,menuRef,menuMobileRef])
 
     return(
@@ -136,21 +144,20 @@ const MenuMobile = () => {
               </div>
           </Hamburguer>
       </div>
-      <div
+      <GlassMenu
           ref={menuMobileRef}
-          className="bg-themeDarkBlue text-white w-64 space-y-6 
-                      py-28 fixed inset-y-0 left-0 transform
+          className="bg-themeDarkBlue text-white w-60 
+                      py-14 fixed inset-y-0 left-0 transform
                       -translate-x-full block desktop:hidden z-50
                       transition duration-1000 ease-in-out border-themeBlue border-r-4"
         >
-          <a
-              href="#" 
-              className="text-white flex space-x-2 px-4 justify-center"
-            >
-              <span className="text-2xl font-extrabold text-themeBlue">
-                  Angel Ramirez
-              </span>
-            </a>
+          <div className="flex justify-center">
+            <img src={Profile} className="rounded-full w-28 h-28 border-4 border-themeBlue"/>
+          </div>
+          <h1 className="text-2xl font-extrabold text-themeBlue flex justify-center mb-14 mt-4">
+            Angel Ramirez
+          </h1>
+    
 
             <nav>
               <Link
@@ -190,7 +197,7 @@ const MenuMobile = () => {
               Habilidades
               </Link>
             </nav>
-        </div>
+        </GlassMenu>
         <Switch>
           <Route path="/" exact>
             <App/>

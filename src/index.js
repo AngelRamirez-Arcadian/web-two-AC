@@ -9,7 +9,6 @@ import Icons from './icons'
 // import AcercaTwo from './acercadetwo';
 // import Experience from './experience';
 // import SkillSection from './skillSection';
-import BackgroundAnimate from './backgroundAnimate';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -22,7 +21,6 @@ ReactDOM.render(
     <AcercaTwo/>
     <Experience/>
     <SkillSection/> */}
-    <BackgroundAnimate/>
   </React.StrictMode>,
   document.getElementById('root')
   

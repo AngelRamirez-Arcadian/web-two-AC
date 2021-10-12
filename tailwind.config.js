@@ -6,9 +6,12 @@ module.exports = {
       '1000': '1000px'
      },
     extend: {
-      translate: {
-        '99': '99%',
+      transitionDuration: {
+        '5000': '5000ms',
       },
+      translate: {
+        '62': '250px',
+       },
       fontFamily: {
         IBM: ['IBM Plex Mono', 'monospace'],
       },
@@ -25,6 +28,7 @@ module.exports = {
       },
       width: {
         7.5: '30px',
+        62: '258px'
       },
       padding: {
         0.05: '0.05px',
