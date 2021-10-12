@@ -1,5 +1,18 @@
 import React, {useRef, useEffect} from 'react';
+import Profile from './images/profile.jpg'
 import styled from 'styled-components'
+import  {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"; 
+
+import App from './App';
+import AcercaDeMi from './acercade'
+import AcercaTwo from './acercadetwo';
+import Experience from './experience';
+import SkillSection from './skillSection'
 
 const Hamburguer = styled.div`
   #nav-icon3 {
@@ -75,6 +88,12 @@ const Hamburguer = styled.div`
   left: 50%;
 }
 `
+const GlassMenu = styled.div`
+  backdrop-filter: blur(5px) saturate(200%);
+  --webkit-backdrop-filter: blur(5px) saturate;
+  background-color: rgba(2,2,21,0.8);
+  border-radius: 0;
+`
 
 const MenuMobile = () => {
 
@@ -106,10 +125,11 @@ const MenuMobile = () => {
           menuMobileRef.current.classList.toggle('-translate-x-full')
           menuRef.current.classList.toggle('open')
         })
+        
     }, [homeRef,aboutRef,experienceRef,skillsRef,menuRef,menuMobileRef])
 
     return(
-    <div>
+    <Router>
       <div className="fixed transform -translate-y-1/2 right-12 sm:top-0 block desktop:hidden z-50">
           <Hamburguer>
               <div 
@@ -124,62 +144,76 @@ const MenuMobile = () => {
               </div>
           </Hamburguer>
       </div>
-      <div
+      <GlassMenu
           ref={menuMobileRef}
-          className="bg-themeDarkBlue text-white w-64 space-y-6 
-                      py-28 fixed inset-y-0 left-0 transform
+          className="bg-themeDarkBlue text-white w-60 
+                      py-14 fixed inset-y-0 left-0 transform
                       -translate-x-full block desktop:hidden z-50
                       transition duration-1000 ease-in-out border-themeBlue border-r-4"
         >
-          <a
-              href="#" 
-              className="text-white flex space-x-2 px-4 justify-center"
-            >
-              <span className="text-2xl font-extrabold text-themeBlue">
-                  Angel Ramirez
-              </span>
-            </a>
+          <div className="flex justify-center">
+            <img src={Profile} className="rounded-full w-28 h-28 border-4 border-themeBlue"/>
+          </div>
+          <h1 className="text-2xl font-extrabold text-themeBlue flex justify-center mb-14 mt-4">
+            Angel Ramirez
+          </h1>
+    
 
             <nav>
-                <a
-                  ref={homeRef}
-                  href="#home" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Inicio
-                </a>
-                <a
-                  ref={aboutRef}
-                  href="#about" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Acerca de Mi
-                </a>
-                <a
-                  ref={experienceRef}
-                  href="#experience" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Experiencia
-                </a>
-                <a
-                  ref={skillsRef}
-                  href="#skills" 
-                  className="py-4 flex justify-center transition
-                            duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
-                            border-t border-b border-opacity-10 border-themeBlue"
-                >
-                    Habilidades
-                </a>
+              <Link
+                ref={homeRef}
+                to="/"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Inicio
+              </Link>
+              <Link
+                ref={aboutRef}
+                to="/Acerca"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Acerca de Mi
+              </Link>
+              <Link
+                ref={experienceRef}
+                to="/Experiencia"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Experiencia
+              </Link>
+              <Link
+                ref={skillsRef}
+                to="/Habilidades"
+                className="py-4 flex justify-center transition
+                          duration-500 hover:bg-themeBlue hover:text-themeDarkBlue
+                          border-t border-b border-opacity-10 border-themeBlue"
+              >
+              Habilidades
+              </Link>
             </nav>
-        </div>
-    </div>
+        </GlassMenu>
+        <Switch>
+          <Route path="/" exact>
+            <App/>
+          </Route>
+          <Route path="/Acerca">
+            <AcercaDeMi/>
+            <AcercaTwo/>
+          </Route>
+          <Route path="/Experiencia">
+            <Experience/>
+          </Route>
+          <Route path="/Habilidades">
+            <SkillSection/>
+          </Route>
+        </Switch>
+    </Router>
     )
 }
  
